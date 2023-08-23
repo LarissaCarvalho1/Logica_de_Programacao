@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de Codar I</title>
+    <script> 
+
+        // Lista de exercícios
+
+        //1. Escreva um programa em Javascript e crie uma variável chamada "nome_do_carro" e atribua-a um valor "Fusca". Exiba-a ao usuário.
+
+        var nome_do_carro = "Fusca";
+
+        alert("O " + nome_do_carro + " foi o carro escolhido.");
+        console.log(nome_do_carro);
+        document.write(nome_do_carro);
+
+
+        //2. Escreva um programa em Javascript em que o usuário informe o seu nome e exiba a mensagem "Olá, [NomeDoUsuario]".
+
+        var nome = prompt("Por favor, informe o seu nome: ");
+
+        alert(" Olá, " + nome + "! Seja bem vindo(a) a nossa página =)");
+        document.write(nome);
+
+
+        //3. Escreva um programa em Javascript em que o usuário informe o seu nome e em seguida o programa perguntará a idade do usuário. Agora o programa deve exibir a mensagem "Olá, [NomeDoUsuario], sua idade é [idade]".
+
+        var nomeUsuario = prompt("Por favor, informe o seu nome abaixo: ");
+        var idade = prompt ("Agora, informe a sua idade (Apenas Números Inteiros): ");
+        idade = parseInt(idade);
+
+        alert("Olá, " + nomeUsuario + ", de acordo com as informações recebidas, você tem " + idade + " anos.");
+        document.write("Olá, " + nomeUsuario + ", de acordo com as informações recebidas, você tem " + idade + " anos.");
+
+
+        //4. Calculando áreas de figuras planas 
+
+        var baseRetangulo = prompt ("Informe a base do retângulo: ");
+        var alturaRetangulo = prompt ("Informe a altura do retângulo: ");
+        areaRetangulo = parseInt(baseRetangulo) * parseInt(alturaRetangulo);
+
+        alert("A área do retângulo equivale a: " + areaRetangulo + "m².");
+
+        //--------------------------------------------------------------------------------------------------------------
+
+        var ladoQuadrado = prompt ("Informe o lado do quadrado: ");
+        areaQuadrado = parseInt(ladoQuadrado) ** 2;
+
+        alert (" Se o lado vale " + ladoQuadrado + ", sua área equivate a: " + areaQuadrado + " m².");
+
+        //--------------------------------------------------------------------------------------------------------------
+
+        var diagonalMaior = prompt("Informe a maior diagonal de um losango: ");
+        var diagonalMenor = prompt("Informe a menor diagonal de um losango: ");
+
+        areaLosango = (parseFloat(diagonalMenor) * parseFloat(diagonalMaior)) / 2;
+
+        alert ("A área do losango equivale a: " + areaLosango+ " m².");
+
+        //--------------------------------------------------------------------------------------------------------------
+
+        var baseMaior = prompt("Informe a base maior do trapézio: ");
+        var baseMenor = prompt("Informe a base menor do trapézio: ");
+        var alturaTrapezio = prompt("Informe a altura: ")
+
+        areaTrapezio = (parseFloat(baseMaior) + parseInt(baseMenor)) * parseFloat(alturaTrapezio)/2
+
+        alert("A área do trapézio equivale a: " + areaTrapezio + " m².")
+
+        //--------------------------------------------------------------------------------------------------------------
+
+        var baseParalelogramo = prompt("Informe a base do paralelogramo: ");
+        var alturaParalelogramo = prompt("Informe a altura do paralelogramo: ");
+
+        areaParalelogramo = parseInt(baseParalelogramo) * parseInt(alturaParalelogramo);
+
+        alert ("A área do paralelogramo equivale a: " + areaParalelogramo + " m².");
+
+        //--------------------------------------------------------------------------------------------------------------
+
+
+        var baseTriangulo = prompt ("Informe a base do triângulo: ");
+        var alturaTriangulo = prompt ("Informe a altura do triângulo: ");
+
+        areaTriangulo = (parseFloat(baseTriangulo) * parseFloat(alturaTriangulo))/2;
+
+        alert ("A área do triângulo equivale a: " + areaTriangulo + " m².");
+
+        //--------------------------------------------------------------------------------------------------------------
+
+        var raio = prompt("Informe o raio da circunferência: ");
+        raio = parseInt(raio);
+        areaCirculo =  3 * (raio ** 2);
+
+        alert("A área do círculo equivale a " + areaCirculo + " cm²");
+        
+
+        /*5- Para que serve o comando "alert" em Javascript?
+        O comando "alert" exibe uma caixa com uma mensagem de alerta, a fim de que o usuário tome alguma ação, como clicar em "ok", para que, posteriormente, o conteúdo da página seja exibido. */
+
+        /*6- Para que serve o comando "prompt" em Javascript?
+        O comando serve para coletar informações dos usuários, com a finalidade de utilizá-las em outras partes do código.*/
+
+        /*7- Para que serve o comando "console.log()" em Javascript?
+        Para exibir o conteúdo no console do navegador. Auxiliando, assim, o desenvolvedor na criação de seu projeto, visto que é possível acompanhar o que está sendo executado de forma clara. */
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
