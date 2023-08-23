@@ -1,2 +1,2 @@
-# Logica_de_Programação
+# Lógica_de_Programação
 Exercícios focados em Lógica de Programação
