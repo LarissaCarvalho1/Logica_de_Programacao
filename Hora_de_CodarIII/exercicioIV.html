@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCÍCIO 4</title>
+
+    <script>
+        //Faça um algoritmo que calcule e escreva a média aritmética dos números inteiros entre 15 (inclusive) e 100 (inclusive).
+
+        var inicio = 15;
+        var fim = 100;
+        var contadorEntre = 0;
+        var soma = 0;
+
+        for (var inicio = 15; inicio <= fim; inicio++){
+            soma += inicio;
+            contadorEntre ++;
+            document.write (`${inicio}, \n`);
+        }
+
+        media = soma/contadorEntre;
+
+        document.write(`<p>A média dos números inteiros entre 15 e 100 é: ${media}</P>`);
+
+       //document.write(`A soma é: ${soma} <br>`);
+       //document.write(`Há ${contadorEntre} números <br>`);
+    </script>
+</head>
+<body>
+</body>
+</html>

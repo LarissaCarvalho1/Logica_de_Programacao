@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCÍCIO 8</title>
+
+    <script>
+        /*Ler um valor N e imprimir todos os valores inteiros entre 1 (inclusive) e N (inclusive). Considere que o N será sempre maior que ZERO.
+        N  é um valor informado pelo usuário*/
+
+        var i = 1;
+        var valido = true;
+
+        var numero = parseInt(prompt('Digite uma número:'));
+        
+        //document.write(`<h3> Os números inteiros entre 1 e ${numero} são: </h3> `);
+
+       if(numero > 0){
+             for( var i = 1; i <= numero; i++){
+                document.write(`<p> ${i} </p>`);
+            }
+
+        } else {
+            alert('Ops! ZERO não é um número válido');
+        
+        } 
+
+        
+    </script>
+</head>
+<body>
+</body>
+</html>
