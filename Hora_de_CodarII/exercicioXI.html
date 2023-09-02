@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCÍCIO 11</title>
+
+    <script>
+        /* Uma micro calculadora: escreva um programa para ler 2 valores inteiros informados pelo usuário
+        e uma das seguintes operações a serem executadas (codificada da seguinte forma: 1. Adição, 2. Subtração,
+        3. Divisão, 4. Multiplicação).O programa deve calcular e escrever o resultado dessa operação sobre os dois
+        valores lidos.Observação: Considere que só serão lidos os valores 1, 2, 3 ou 4 para as operações*/
+
+
+        var numero1 = parseInt(prompt('Digite o 1° número: '));
+        var numero2 = parseInt(prompt('Digite o 2° número: '));
+
+        var operacao = parseInt(prompt('Escolha a operação:\n 1. Adição\n 2. Subtração\n 3. Divisão\n 4. Multiplicação'))
+
+
+        switch (operacao) {
+
+            case 1:
+                var soma = numero1 + numero2;
+                alert(`Soma é igual a: ${soma}`);
+                break;
+
+            case 2: 
+                var menos = numero1 - numero2;
+                alert(`Subtração é igual a: ${menos}`);
+                break;
+
+            case 3:
+                var divisao = numero1 / numero2;
+                alert(`Divisão é igual a: ${divisao.toFixed(2)}`);
+                break;
+
+            case 4:
+                var multi = numero1 * numero2;
+                alert(`Multiplicação é igual a: ${multi}`);
+                break;
+
+            default:
+                alert('Está opção não é válida. Escolha entre 1 e 4.')
+        }
+
+    </script>
+</head>
+<body>
+</body>
+</html>

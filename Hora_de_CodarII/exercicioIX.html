@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCÍCIO 9</title>
+
+    <script>
+        /*Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que 
+        diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu).*/
+
+        var anoAtual = parseInt(prompt('Informe o ano atual:'));
+        var anoNascimento = parseInt(prompt('Informe o seu ano de nascimento:'));
+
+        var idade = anoAtual - anoNascimento;
+
+        if (idade>=18){
+            alert('Que legal! Você já pode votar.');
+
+        } else if (idade >= 16 && idade < 18){
+            alert('Que legal! O seu voto é opcional.');
+
+        } else {
+            alert('Poxa! Você ainda não pode votar.')
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

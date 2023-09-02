@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCÍCIO 7</title>
+
+    <script>
+        /*Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos 
+        com valor inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos
+        valores que o usuário informou.*/
+    
+        var i = 1; 
+        const valores = []; 
+        var soma = 0;
+       
+       for (var i = 1; i <= 6; i++){
+            valor = parseInt(prompt(`Informe o ${i}° valor: `));
+            valores.push(valor);
+
+            if (valor < 72) {
+                soma += valor
+            }
+       }
+
+       document.write(`A soma dos números menores que 72 é: ${soma} <br>`);
+       document.write(`Os valores informados foram: ${valores}`);
+
+    </script>
+</head>
+<body>
+</body>
+</html>

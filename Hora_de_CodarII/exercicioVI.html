@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCÍCIO 6</title>
+
+    <script>
+        /*Faça um programa que receba quatro valores informados pelo usuário, mas informe somente o primeiro, 
+        o último e o maior de todos eles (considere que todos os números informados serão diferentes)*/
+
+        var num1 = parseInt(prompt('Informe o 1° valor: '));
+        var num2 = parseInt(prompt('Informe o 2° valor: '));
+        var num3 = parseInt(prompt('Informe o 3° valor: '));
+        var num4 = parseInt(prompt('Informe o 4° valor: '));
+
+        if (num1>num2 && num1>num3 && num1>num4){
+            alert(`Ordem de números informados: \n Primeiro: ${num1} \n Último: ${num4} \n Maior Número: ${num1}`);
+
+        } else if (num2>num1 && num2>num3 && num2>num4){
+            alert(`Ordem de números informados: \n Primeiro: ${num1} \n Último: ${num4} \n Maior Número: ${num2}`);
+
+        } else if (num3>num1 && num3>num2 && num3>num4){
+            alert(`Ordem de números informados: \n Primeiro: ${num1} \n Último: ${num4} \n Maior Número: ${num3}`);
+
+        } else {
+            alert(`Ordem de números informados: \n Primeiro: ${num1} \n Último: ${num4} \n Maior Número: ${num4}`);
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
