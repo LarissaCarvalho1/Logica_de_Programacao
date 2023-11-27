@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCÍCIO 2</title>
+
+    <script>
+        /*Crie uma array de planetas que inclua "Terra", "Marte", "Plutão", "Vênus", "Júpiter", "Saturno"  e, em seguida, peça ao usuário para digitar o nome de um planeta. 
+
+        Verifique se o planeta que o usuário informou está na array e informe ao usuário.*/
+
+        var planetas = ["TERRA", "MARTE", "PLUTÃO", "VÊNUS", "JÚPITER", "SATURNO"];
+
+        pesquisarPlanetas();
+
+        function pesquisarPlanetas(){
+
+            var planeta = prompt('Digite o nome de um planeta:').toUpperCase();
+
+            if(planeta === ''){
+                alert('Por favor, preencha o campo novamente.');
+                pesquisarPlanetas();
+
+            } else if(planetas.includes(planeta)){
+                alert(`O planeta ${planeta} foi encontrado!`);
+
+            } else{
+                alert(`O planeta ${planeta} não foi encontrado.`);
+            }
+            pesquisarPlanetas();
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

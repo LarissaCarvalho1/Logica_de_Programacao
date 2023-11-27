@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCÍCIO 3</title>
+
+    <script>
+        /*Vamos criar uma lista de compras. 
+
+        Crie uma array de frutas, exiba-a ao usuário e, em seguida, peça ao usuário para digitar o nome de uma das frutas.
+
+        Caso a fruta esteja no array, remova-a e exiba a mensagem "Fruta foi retirada da lista". 
+
+        Peça novamente para o usuário digitar o nome de uma fruta para ser removida. 
+
+        Sempre que o usuário procurar por uma fruta que não está no array exiba a mensagem "Fruta indisponível no nosso mercado". 
+
+        Quando o array não possuir mais itens dentro de si, escreva "Lista de compras finalizada".*/
+        
+        let frutas = ["Maça", "Banana", "Abacaxi", "Melancia", "Uva", "Laranja", "Limao", "Goiaba", "Amora", "Abacate", "Acerola","Cacau"];
+
+        function listarCompras(){
+            if(frutas.length > 0){
+                alert("Lista de Compras: ");
+                for(let i = 0; i < frutas.length; i++){
+                    alert(frutas[i]);
+                }
+            }
+        }
+
+        listarCompras();
+
+        function removerFrutas() {
+                while (frutas.length > 0) {
+                let frutaParaRemover = prompt(`Informe o nome da fruta:`);
+                frutaParaRemover = frutaParaRemover.trim().toLocaleUpperCase(); // Remover espaços em branco e converter para maiúsculas
+
+                // Verificar se a string não está vazia
+                if (frutaParaRemover !== "") {
+                    if (frutas.includes(frutaParaRemover)) {
+                        frutas = frutas.filter(fruta => fruta !== frutaParaRemover);
+                        alert(`${frutaParaRemover} foi removida da lista.`);
+                    } else {
+                        alert("Fruta indisponível no nosso mercado.");
+                    }
+                } else {
+                    alert("Por favor, informe um nome de fruta válido.");
+                }
+            }
+            alert("Lista de compras finalizada");
+        }
+
+        removerFrutas();   
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

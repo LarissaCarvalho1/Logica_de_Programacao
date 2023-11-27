@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCÍCIO 1</title>
+
+    <script>
+        /*Crie um programa onde o usuário possa cadastrar estudantes sem limites, e, em seguida, se o usuário digitar "PARE" o programa deve exibir a quantidade de estudantes cadastrados e a lista com cada um deles. */
+
+        var estudantes = [];
+        
+        cadastrarEstudantes();
+
+        function cadastrarEstudantes(){ 
+            alert('CADASTRAR ESTUDANTES');
+            var alunos = 0;
+
+            while(true){
+                var estudante = prompt(`Informe o nome do ${alunos + 1}° estudante`);
+
+                if((estudante.toUpperCase()) === "PARE"){
+                    break;
+                } 
+                
+                if(estudante === ''){
+                    alert('Por favor, preencha o campo novamente.');
+
+                } else {
+                    estudantes.push(estudante);
+                    alunos++;
+                }
+            }
+
+            if(alunos === 1){
+                alert(`${alunos} aluno foi cadastrado.`);
+                listarEstudantes();
+
+            } else if(alunos > 1){
+                alert(`${alunos} alunos foram cadastrados.`);
+                listarEstudantes();
+
+            } else{
+                alert('Nenhum aluno foi cadastrado');
+            }
+        }
+
+        function listarEstudantes(){
+            var listar = confirm('Ver lista de estudantes cadastrados?');
+
+            if(listar){
+                if(estudantes.length > 0){
+                    alert('Lista de estudantes:');
+                    for(var i = 0; i < estudantes.length; i++){
+                    alert(estudantes[i]);
+                    }
+                } 
+            
+            } else {
+                cadastrarEstudantes();
+                //alert('Nenhum aluno cadastrado para listar.')
+            }
+
+            cadastrarEstudantes();
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
